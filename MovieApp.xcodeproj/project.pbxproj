@@ -13,6 +13,10 @@
 		5CFB3222290706EC00A2ABB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CFB3221290706EC00A2ABB1 /* Assets.xcassets */; };
 		5CFB3225290706EC00A2ABB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CFB3223290706EC00A2ABB1 /* LaunchScreen.storyboard */; };
 		5CFB323329070F8D00A2ABB1 /* MovieHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFB323229070F8D00A2ABB1 /* MovieHomeViewController.swift */; };
+		5CFB323B290721DD00A2ABB1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5CFB323A290721DD00A2ABB1 /* SnapKit */; };
+		5CFB323E290721F700A2ABB1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5CFB323D290721F700A2ABB1 /* Alamofire */; };
+		5CFB32412907221800A2ABB1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5CFB32402907221800A2ABB1 /* Kingfisher */; };
+		5CFB32432907319A00A2ABB1 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFB32422907319A00A2ABB1 /* MovieModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,7 @@
 		5CFB3224290706EC00A2ABB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CFB3226290706EC00A2ABB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CFB323229070F8D00A2ABB1 /* MovieHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieHomeViewController.swift; sourceTree = "<group>"; };
+		5CFB32422907319A00A2ABB1 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CFB32412907221800A2ABB1 /* Kingfisher in Frameworks */,
+				5CFB323B290721DD00A2ABB1 /* SnapKit in Frameworks */,
+				5CFB323E290721F700A2ABB1 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +64,8 @@
 		5CFB3214290706EC00A2ABB1 /* MovieApp */ = {
 			isa = PBXGroup;
 			children = (
+				5CFB32372907213700A2ABB1 /* Model */,
+				5CFB3234290720D500A2ABB1 /* Service */,
 				5CFB323129070D0600A2ABB1 /* Support */,
 				5CFB323029070C8000A2ABB1 /* Resources */,
 				5CFB322D29070C5A00A2ABB1 /* Scene */,
@@ -86,6 +96,7 @@
 		5CFB322E29070C6600A2ABB1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				5CFB32382907215000A2ABB1 /* HomeViewModel */,
 				5CFB323229070F8D00A2ABB1 /* MovieHomeViewController.swift */,
 			);
 			path = Home;
@@ -115,6 +126,44 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
+		5CFB3234290720D500A2ABB1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5CFB3236290720EA00A2ABB1 /* Service Manager */,
+				5CFB3235290720DB00A2ABB1 /* Web Service */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5CFB3235290720DB00A2ABB1 /* Web Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Web Service";
+			sourceTree = "<group>";
+		};
+		5CFB3236290720EA00A2ABB1 /* Service Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Service Manager";
+			sourceTree = "<group>";
+		};
+		5CFB32372907213700A2ABB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5CFB32422907319A00A2ABB1 /* MovieModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5CFB32382907215000A2ABB1 /* HomeViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,6 +180,11 @@
 			dependencies = (
 			);
 			name = MovieApp;
+			packageProductDependencies = (
+				5CFB323A290721DD00A2ABB1 /* SnapKit */,
+				5CFB323D290721F700A2ABB1 /* Alamofire */,
+				5CFB32402907221800A2ABB1 /* Kingfisher */,
+			);
 			productName = MovieApp;
 			productReference = 5CFB3212290706EC00A2ABB1 /* MovieApp.app */;
 			productType = "com.apple.product-type.application";
@@ -159,6 +213,11 @@
 				Base,
 			);
 			mainGroup = 5CFB3209290706EC00A2ABB1;
+			packageReferences = (
+				5CFB3239290721DD00A2ABB1 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				5CFB323C290721F700A2ABB1 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				5CFB323F2907221800A2ABB1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 5CFB3213290706EC00A2ABB1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -187,6 +246,7 @@
 			files = (
 				5CFB323329070F8D00A2ABB1 /* MovieHomeViewController.swift in Sources */,
 				5CFB3216290706EC00A2ABB1 /* AppDelegate.swift in Sources */,
+				5CFB32432907319A00A2ABB1 /* MovieModel.swift in Sources */,
 				5CFB3220290706EC00A2ABB1 /* MovieApp.xcdatamodeld in Sources */,
 				5CFB3218290706EC00A2ABB1 /* SceneDelegate.swift in Sources */,
 			);
@@ -406,6 +466,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5CFB3239290721DD00A2ABB1 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		5CFB323C290721F700A2ABB1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		5CFB323F2907221800A2ABB1 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5CFB323A290721DD00A2ABB1 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CFB3239290721DD00A2ABB1 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		5CFB323D290721F700A2ABB1 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CFB323C290721F700A2ABB1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		5CFB32402907221800A2ABB1 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CFB323F2907221800A2ABB1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		5CFB321E290706EC00A2ABB1 /* MovieApp.xcdatamodeld */ = {
