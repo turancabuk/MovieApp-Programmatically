@@ -7,6 +7,7 @@
 
 import Alamofire
 
+//MARK: - Service Manager
 final class MovieServiceManager {
     static let shared: MovieServiceManager = MovieServiceManager()
 }
