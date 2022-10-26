@@ -21,6 +21,8 @@
 		5CFB3247290855DA00A2ABB1 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFB3246290855DA00A2ABB1 /* WebService.swift */; };
 		5CFB324A2908662700A2ABB1 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFB32492908662700A2ABB1 /* Constant.swift */; };
 		5CFB324C2908663700A2ABB1 /* ServiceConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFB324B2908663700A2ABB1 /* ServiceConstant.swift */; };
+		5CFB324F2909BC6B00A2ABB1 /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFB324E2909BC6B00A2ABB1 /* TypeAlias.swift */; };
+		5CFB32522909C3F400A2ABB1 /* MovieHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFB32512909C3F400A2ABB1 /* MovieHomeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		5CFB3246290855DA00A2ABB1 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		5CFB32492908662700A2ABB1 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		5CFB324B2908663700A2ABB1 /* ServiceConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConstant.swift; sourceTree = "<group>"; };
+		5CFB324E2909BC6B00A2ABB1 /* TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
+		5CFB32512909C3F400A2ABB1 /* MovieHomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieHomeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 		5CFB3214290706EC00A2ABB1 /* MovieApp */ = {
 			isa = PBXGroup;
 			children = (
+				5CFB324D2909BC5900A2ABB1 /* Helper */,
 				5CFB32482908661900A2ABB1 /* Constant */,
 				5CFB32372907213700A2ABB1 /* Model */,
 				5CFB3234290720D500A2ABB1 /* Service */,
@@ -105,6 +110,7 @@
 		5CFB322E29070C6600A2ABB1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				5CFB32502909C3B500A2ABB1 /* MovieHomeCell */,
 				5CFB32382907215000A2ABB1 /* HomeViewModel */,
 				5CFB323229070F8D00A2ABB1 /* MovieHomeViewController.swift */,
 			);
@@ -182,6 +188,22 @@
 				5CFB324B2908663700A2ABB1 /* ServiceConstant.swift */,
 			);
 			path = Constant;
+			sourceTree = "<group>";
+		};
+		5CFB324D2909BC5900A2ABB1 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5CFB324E2909BC6B00A2ABB1 /* TypeAlias.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		5CFB32502909C3B500A2ABB1 /* MovieHomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				5CFB32512909C3F400A2ABB1 /* MovieHomeCell.swift */,
+			);
+			path = MovieHomeCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +290,8 @@
 				5CFB3216290706EC00A2ABB1 /* AppDelegate.swift in Sources */,
 				5CFB3247290855DA00A2ABB1 /* WebService.swift in Sources */,
 				5CFB324A2908662700A2ABB1 /* Constant.swift in Sources */,
+				5CFB32522909C3F400A2ABB1 /* MovieHomeCell.swift in Sources */,
+				5CFB324F2909BC6B00A2ABB1 /* TypeAlias.swift in Sources */,
 				5CFB32432907319A00A2ABB1 /* MovieModel.swift in Sources */,
 				5CFB3220290706EC00A2ABB1 /* MovieApp.xcdatamodeld in Sources */,
 				5CFB32452907331200A2ABB1 /* MovieServiceManager.swift in Sources */,
