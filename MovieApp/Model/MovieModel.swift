@@ -7,18 +7,24 @@
 
 import Foundation
 
-struct Movies: Codable {
-    let results: [Result]?
-
-     
+struct Result: Codable {
+    let search: [Search]?
+    
+    enum CodingKeys: String, CodingKey {
+        case search = "Search"
+    }
 }
 
 // MARK: - Result
-struct Result: Codable {
-    let originalLanguage, originalTitle, overview: String?
-    let popularity: Double?
-    let posterPath, releaseDate, title: String?
-    let voteAverage: Double?
-
+struct Search: Codable {
+    let title, year, imdbID: String
+    let poster: String
     
+    enum CodingKeys: String, CodingKey {
+        case title = "Title"
+        case year = "Year"
+        case imdbID
+        case poster = "Poster"
+        
+    }
 }

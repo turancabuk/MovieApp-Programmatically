@@ -2,9 +2,11 @@
 //  Constant.swift
 //  MovieApp
 //
-//  Created by Turan Çabuk on 25.10.2022.
+//  Created by Turan Çabuk on 29.10.2022.
 //
 
-import UIKit.UIView
+import Foundation
 
-final class Constant {}
+
+// Main Constant
+class Constant{}
