@@ -4,24 +4,29 @@
 
 * With the MovieApp Application, you can search films Top IMDB Movies.
 
-* With the MovieApp Application, you can go to detail of Top IMDB Movies.
+** With the MovieApp Application, you can go to detail of Top IMDB Movies.
 
 ** shows you the details of the movies you are looking for
+
 ** Name of movie
+
 ** Type of movie
+
 ** Year of movie
+
 ** Poster of movie
+
 ** Description of movie
 
 Tools
 
 Swift
 
-Delegate
-Closure
-POP
-OOP
-Date
+**Delegate
+**Closure
+**POP
+**OOP
+**Date
 High Order Functions
 Memory Management
 Clean Code
