@@ -11,7 +11,7 @@ import Kingfisher
 
 class MovieDetailScreen: UIViewController {
     
-
+    
     private let service = Services()
     private var detailResults: DetailResults
     var imdbID: String = String()
@@ -108,13 +108,13 @@ extension MovieDetailScreen {
             make.left.equalTo(view).offset(8)
             make.right.equalTo(view).inset(8)
         }
-
+        
         genreLabel.snp.makeConstraints { make in
             make.top.equalTo(titleLabel.snp.bottom).offset(16)
             make.left.equalTo(view).offset(8)
             make.right.equalTo(view).inset(8)
         }
-
+        
         plotLabel.snp.makeConstraints { make in
             make.top.equalTo(genreLabel.snp.bottom).offset(8)
             make.left.equalTo(view).offset(8)

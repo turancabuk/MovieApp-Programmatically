@@ -14,7 +14,7 @@ struct DetailResults: Codable {
     let awards: String
     let poster: String
     let imdbRating: String
-
+    
     enum CodingKeys: String, CodingKey {
         case title = "Title"
         case year = "Year"
@@ -28,6 +28,6 @@ struct DetailResults: Codable {
         case awards = "Awards"
         case poster = "Poster"
         case imdbRating
-    
+        
     }
 }

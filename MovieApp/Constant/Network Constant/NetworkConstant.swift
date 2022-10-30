@@ -8,9 +8,12 @@ import Foundation
 
 extension Constant {
     class NetworkConstant{
+        
+        
         enum SearchMovieServiceEndPoint: String {
-            case BASE_URL = "http://www.omdbapi.com"
+            case BASE_URL = "https://www.omdbapi.com"
             case API_KEY = "apikey=357e15d8"
+            
             
             static func searchMovie(searchMovieName: String) -> String {
                 "\(BASE_URL.rawValue)?s=\(searchMovieName)&\(API_KEY.rawValue)"
@@ -18,11 +21,11 @@ extension Constant {
             
             static func detailMovie(movieImdbId: String) -> String {
                 "\(BASE_URL.rawValue)?i=\(movieImdbId)&\(API_KEY.rawValue)"
+                
             }
         }
     }
-    }
+}
 
-//http://www.omdbapi.com/?s=searchMovieName&apikey=357e15d8
-//http://www.omdbapi.com/?i=movieImdbId=&apikey=357e15d8
-
+//https://www.omdbapi.com/?s=searchMovieName&apikey=357e15d8
+//https://www.omdbapi.com/?i=movieImdbId=&apikey=357e15d8

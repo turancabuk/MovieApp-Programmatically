@@ -41,5 +41,5 @@ final class MovieHomeViewModel: MovieHomeProtocol {
     init(service: MovieServiceProtocols) {
         self.service = service
     }
-
+    
 }

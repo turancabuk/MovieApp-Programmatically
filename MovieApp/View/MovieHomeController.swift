@@ -87,13 +87,13 @@ extension MovieHomeController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-
-         viewModel.delegate?.selectedMovies(imdbID: search[indexPath.row].imdbID)
+        
+        viewModel.delegate?.selectedMovies(imdbID: search[indexPath.row].imdbID)
     }
     
 }
 
-    // MARK: - Snapkit Extension
+// MARK: - Snapkit Extension
 extension MovieHomeController {
     private func makeTableview(){
         tableView.snp.makeConstraints { make in
@@ -106,7 +106,7 @@ extension MovieHomeController {
     }
 }
 
-    // MARK: - Search Controller Extension
+// MARK: - Search Controller Extension
 
 extension MovieHomeController: UISearchResultsUpdating {
     
@@ -125,7 +125,7 @@ extension MovieHomeController: UISearchResultsUpdating {
 
 extension MovieHomeController: MovieOutput {
     func selectedMovies(imdbID: String) {
-         viewModel.getMovieDetail(movieImdbId: imdbID) { data in
+        viewModel.getMovieDetail(movieImdbId: imdbID) { data in
             guard let data = data else { return }
             self.navigationController?.pushViewController(MovieDetailScreen(detailResults: data), animated: true)
         }
