@@ -4,9 +4,9 @@
 
 * With the MovieApp Application, you can search films Top IMDB Movies.
 
-** With the MovieApp Application, you can go to detail of Top IMDB Movies.
+* With the MovieApp Application, you can go to detail of Top IMDB Movies.
 
-** shows you the details of the movies you are looking for
+* shows you the details of the movies you are looking for
 
 ** Name of movie
 
