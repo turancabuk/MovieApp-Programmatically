@@ -19,47 +19,39 @@
 ** Description of movie
 
 Tools
+* MVVM
+* Programmatically
+* Alamofire
+* Snapkit
+* Kingfisher
+* CoreData
+* Network
+* Memory Management
+* Swift
+* Delegate
+* Closure
+* POP
+* OOP 
+* Clean Code
+* UIKit
+* TableView
+* Navigation Controller
 
-Swift
+<img width="344" alt="Ekran Resmi 2022-10-30 16 41 30" src="https://user-images.githubusercontent.com/98350672/198884163-f852f0e4-6c0f-4769-95aa-aa032878fd6a.png">
 
-**Delegate
-**Closure
-**POP
-**OOP
-**Date
-High Order Functions
-Memory Management
-Clean Code
-Unit Test
-UIKit
 
-CollectionView
-TableView
-UIRefresh
-Auto Layout
-TabBar
-Navigation Controller
-Picker
-ActionSheet
-Network
+<img width="348" alt="Ekran Resmi 2022-10-30 16 41 43" src="https://user-images.githubusercontent.com/98350672/198884166-ce4bb281-a6cb-402c-b117-342732691623.png">
 
-Books Api: https://rss.applemarketingtools.com/api/v2/us/books/top-free/100/books.json
-CoreData
-Design Pattern Architecture
 
-Viper
+<img width="346" alt="Ekran Resmi 2022-10-30 16 42 01" src="https://user-images.githubusercontent.com/98350672/198884173-e5389719-7911-498f-9591-1a5111fbbb2e.png">
 
 
 
 
 
-<img width="344" alt="Ekran Resmi 2022-10-30 15 49 27" src="https://user-images.githubusercontent.com/98350672/198880917-60bf49c5-2454-4b93-af6b-d5ab9610c977.png">
 
 
-<img width="355" alt="Ekran Resmi 2022-10-30 15 49 36" src="https://user-images.githubusercontent.com/98350672/198880934-bfa67432-dd6a-4297-a6d0-c720e689bbe7.png">
-
-<img width="366" alt="Ekran Resmi 2022-10-30 15 52 20" src="https://user-images.githubusercontent.com/98350672/198880944-38ebad0e-9ba0-4752-877f-559eff0391b8.png">
 
 
-<img width="353" alt="Ekran Resmi 2022-10-30 15 52 28" src="https://user-images.githubusercontent.com/98350672/198880949-7a6e8409-68c7-4b2f-8709-2e5010a2555a.png">
+
 
